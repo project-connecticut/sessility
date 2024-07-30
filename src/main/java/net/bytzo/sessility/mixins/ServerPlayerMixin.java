@@ -109,7 +109,7 @@ public abstract class ServerPlayerMixin extends Player implements SessilePlayer 
 					Sessility.settings().properties().messageMotile;
 			if (!broadcastMessage.isBlank()) {
 				var translatedMessage = Component.translatable(broadcastMessage, this.getGameProfile().getName());
-				var formattedMessage = Component.literal(translatedMessage.getString()).withStyle(ChatFormatting.YELLOW);
+				var formattedMessage = Component.literal(translatedMessage.getString()).withStyle(ChatFormatting.DARK_AQUA);
 				this.server.getPlayerList().broadcastSystemMessage(formattedMessage, false);
 			}
 		}
